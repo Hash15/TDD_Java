@@ -38,5 +38,13 @@ class CalculatorTest {
     assertEquals(8, obj.add("//;\n3;5"));
   }
 
+  @Test
+  void testNegativeNumberThrowsException() {
+    Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+      obj.add("1,-5,3,-8");
+    });
+
+    assertEquals("negative numbers not allowed: -5,-8", exception.getMessage());
+  }
 
 }
