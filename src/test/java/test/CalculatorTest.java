@@ -25,7 +25,12 @@ class CalculatorTest {
 
   @Test
   void testTwoNumbersCommaSeparated() {
-    assertEquals(15, obj.add("7,8")); 
+    assertEquals(15, obj.add("7,8"));
+  }
+
+  @Test
+  void testNewLineBetweenNumbers() {
+    assertEquals(18, obj.add("4\n6,8"));
   }
 
 

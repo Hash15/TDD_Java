@@ -7,7 +7,7 @@ public class Calculator {
       return 0;
     }
 
-    String[] parts = numbers.split(",");  // split by comma
+    String[] parts = numbers.split("[,\n]");  // split by comma
     int sum = 0;
     for (String part : parts) {
       sum += Integer.parseInt(part);
