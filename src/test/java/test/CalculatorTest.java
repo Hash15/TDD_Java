@@ -17,4 +17,10 @@ class CalculatorTest {
   void testEmptyStringReturnsZero() {
     assertEquals(0, obj.add("")); // Expect 0 for empty string
   }
+
+  @Test
+  void testSingleNumberReturnsThatNumber() {
+    assertEquals(1, obj.add("1"));
+  }
+
 }
