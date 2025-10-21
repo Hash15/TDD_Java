@@ -23,4 +23,10 @@ class CalculatorTest {
     assertEquals(1, obj.add("1"));
   }
 
+  @Test
+  void testTwoNumbersCommaSeparated() {
+    assertEquals(15, obj.add("7,8")); 
+  }
+
+
 }
