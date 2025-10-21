@@ -33,5 +33,10 @@ class CalculatorTest {
     assertEquals(18, obj.add("4\n6,8"));
   }
 
+  @Test
+  void testCustomDelimiter() {
+    assertEquals(8, obj.add("//;\n3;5"));
+  }
+
 
 }
